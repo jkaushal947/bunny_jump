@@ -28,14 +28,14 @@ export default class Game extends Phaser.Scene {
         this.load.image('background', 'assets/sprites/bg_layer1.png')
 
         // load the platform image
-        this.load.image('platform', 'assets/sprites/ground_grass.png')
+        this.load.image('platform', 'assets/sprites/ground_grass_1.png')
 
         // load the bunny image
-        this.load.image('bunny-stand', 'assets/sprites/bunny1_stand.png')
-        this.load.image('bunny-jump', 'assets/sprites/bunny1_jump.png')
+        this.load.image('bunny-stand', 'assets/sprites/bunny2_stand.png')
+        this.load.image('bunny-jump', 'assets/sprites/bunny2_jump.png')
 
         // load the carrot image
-        this.load.image('carrot', 'assets/sprites/carrot.png')
+        this.load.image('carrot', 'assets/sprites/carrot_1.png')
 
         // get key down
         this.cursors = this.input.keyboard.createCursorKeys()
@@ -121,7 +121,7 @@ export default class Game extends Phaser.Scene {
 
         // render the score
         this.add.image(20, 35, 'carrot').setScale(0.5).setScrollFactor(1, 0).setOrigin(0, 0.5) 
-        const style = { color: '#000', fontSize: 32, fontFamily: 'monospace' }
+        const style = { color: '#000', fontSize: 32, fontFamily: 'Patrick Hand' }
         this.carrotCollectedText = this.add.text(58, 35, ' × 0', style)
                                             .setScrollFactor(0)
                                             .setOrigin(0, 0.5)

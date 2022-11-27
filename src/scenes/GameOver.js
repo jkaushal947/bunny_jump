@@ -20,7 +20,7 @@ export default class GameOver extends Phaser.Scene {
         this.load.image('background', 'assets/sprites/bg_layer1.png')
 
         // load the carrot image
-        this.load.image('carrot', 'assets/sprites/carrot.png')
+        this.load.image('carrot', 'assets/sprites/carrot_1.png')
 
         // sound effect
         this.load.audio('lose', 'assets/sfx/lose.ogg')        
@@ -46,7 +46,7 @@ export default class GameOver extends Phaser.Scene {
         { 
             color: '#000', 
             fontSize: 56, 
-            fontFamily: 'monospace' 
+            fontFamily: 'Patrick Hand' 
         }).setOrigin(0.5)
 
         
@@ -58,20 +58,20 @@ export default class GameOver extends Phaser.Scene {
         { 
             color: '#000', 
             fontSize: 44, 
-            fontFamily: 'monospace' 
+            fontFamily: 'Patrick Hand' 
         }).setOrigin(0, 0.5)
         
         this.add.text(width * 0.5, height * 0.6, 'Game Over', 
             { 
                 color: '#000', 
                 fontSize: 50, 
-                fontFamily: 'monospace' 
+                fontFamily: 'Patrick Hand' 
             }).setOrigin(0.5)
         this.text = this.add.text(width * 0.5, height * 0.75, 'Press SPACE to play again', 
             { 
                 color: '#000', 
                 fontSize: 30, 
-                fontFamily: 'monospace' 
+                fontFamily: 'Patrick Hand' 
             }).setOrigin(0.5)
 
         // play again by pressing space

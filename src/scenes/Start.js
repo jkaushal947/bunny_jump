@@ -36,13 +36,13 @@ export default class Start extends Phaser.Scene {
             { 
                 color: '#000', 
                 fontSize: 50, 
-                fontFamily: 'monospace' 
+                fontFamily: 'Patrick Hand' 
             }).setOrigin(0.5)
         this.text = this.add.text(width * 0.5, height * 0.75, 'Press SPACE to play', 
             { 
                 color: '#000', 
                 fontSize: 30, 
-                fontFamily: 'monospace' 
+                fontFamily: 'Patrick Hand' 
             }).setOrigin(0.5)
 
         // background music
